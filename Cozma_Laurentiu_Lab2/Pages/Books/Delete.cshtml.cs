@@ -20,7 +20,7 @@ namespace Cozma_Laurentiu_Lab2.Pages.Books
         }
 
         [BindProperty]
-      public Book Book { get; set; }
+        public Book Book { get; set; }
 
         public async Task<IActionResult> OnGetAsync(int? id)
         {
@@ -35,7 +35,7 @@ namespace Cozma_Laurentiu_Lab2.Pages.Books
             {
                 return NotFound();
             }
-            else 
+            else
             {
                 Book = book;
             }

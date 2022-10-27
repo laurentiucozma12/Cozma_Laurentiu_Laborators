@@ -20,7 +20,7 @@ namespace Cozma_Laurentiu_Lab2.Pages.Authors
         }
 
         [BindProperty]
-      public Author Author { get; set; }
+        public Author Author { get; set; }
 
         public async Task<IActionResult> OnGetAsync(int? id)
         {
@@ -35,7 +35,7 @@ namespace Cozma_Laurentiu_Lab2.Pages.Authors
             {
                 return NotFound();
             }
-            else 
+            else
             {
                 Author = author;
             }

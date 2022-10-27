@@ -30,7 +30,7 @@ namespace Cozma_Laurentiu_Lab2.Pages.Authors
                 return NotFound();
             }
 
-            var author =  await _context.Author.FirstOrDefaultAsync(m => m.Id == id);
+            var author = await _context.Author.FirstOrDefaultAsync(m => m.Id == id);
             if (author == null)
             {
                 return NotFound();
@@ -71,7 +71,7 @@ namespace Cozma_Laurentiu_Lab2.Pages.Authors
 
         private bool AuthorExists(int id)
         {
-          return _context.Author.Any(e => e.Id == id);
+            return _context.Author.Any(e => e.Id == id);
         }
     }
 }
