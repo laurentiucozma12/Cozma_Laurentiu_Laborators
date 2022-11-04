@@ -8,7 +8,7 @@ namespace Cozma_Laurentiu_Lab2.Migrations
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
-            migrationBuilder.CreateTable(
+         /*  migrationBuilder.CreateTable(
                 name: "Book",
                 columns: table => new
                 {
@@ -22,6 +22,7 @@ namespace Cozma_Laurentiu_Lab2.Migrations
                 {
                     table.PrimaryKey("PK_Book", x => x.ID);
                 });
+         */
         }
 
         protected override void Down(MigrationBuilder migrationBuilder)
