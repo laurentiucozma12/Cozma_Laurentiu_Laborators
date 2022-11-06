@@ -26,12 +26,12 @@ namespace Cozma_Laurentiu_Lab2.Pages.Authors
 
         [BindProperty]
         public Author Author { get; set; }
-
+        
 
         // To protect from overposting attacks, see https://aka.ms/RazorPagesCRUD
         public async Task<IActionResult> OnPostAsync()
         {
-            if (!ModelState.IsValid)
+          if (!ModelState.IsValid)
             {
                 return Page();
             }

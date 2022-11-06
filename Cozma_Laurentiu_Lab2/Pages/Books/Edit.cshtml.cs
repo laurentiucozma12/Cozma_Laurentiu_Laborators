@@ -25,6 +25,12 @@ namespace Cozma_Laurentiu_Lab2.Pages.Books
 
         public async Task<IActionResult> OnGetAsync(int? id)
         {
+            var authorList = _context.Author.Select(x => new
+            {
+                x.ID,
+                FullName = x.LastName + " " + x.FirstName
+            });
+
             if (id == null || _context.Book == null)
             {
                 return NotFound();
@@ -36,10 +42,8 @@ namespace Cozma_Laurentiu_Lab2.Pages.Books
                 return NotFound();
             }
             Book = book;
-            ViewData["PublisherID"] = new SelectList(_context.Set<Publisher>(), "ID",
-"PublisherName");
-            ViewData["AuthorID"] = new SelectList(_context.Set<Author>(), "ID",
-          "FullName");
+            ViewData["PublisherID"] = new SelectList(_context.Set<Publisher>(), "ID", "PublisherName");
+            ViewData["AuthorID"] = new SelectList(_context.Set<Author>(), "ID", "FullName");
             return Page();
         }
 
