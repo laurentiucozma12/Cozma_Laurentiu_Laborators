@@ -16,14 +16,6 @@ namespace Cozma_Laurentiu_Lab2.Migrations
                 nullable: false,
                 oldClrType: typeof(decimal),
                 oldType: "decimal(18,2)");
-
-         /*   migrationBuilder.AddColumn<DateTime>(
-                name: "PublishingDate",
-                table: "Book",
-                type: "datetime2",
-                nullable: false,
-                defaultValue: new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified));
-         */
         }
 
         protected override void Down(MigrationBuilder migrationBuilder)
