@@ -19,5 +19,7 @@ namespace Cozma_Laurentiu_Lab2.Data
         public DbSet<Cozma_Laurentiu_Lab2.Models.Author> Author { get; set; }
 
         public DbSet<Cozma_Laurentiu_Lab2.Models.Publisher> Publisher { get; set; }
+
+        public DbSet<Cozma_Laurentiu_Lab2.Models.BookCategory> BookCategory { get; set; }
     }
 }
