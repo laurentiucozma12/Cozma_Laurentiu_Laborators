@@ -17,6 +17,6 @@ namespace Cozma_Laurentiu_Lab2.Models
         public Author? Author { get; set; }
         public int? PublisherID { get; set; }
         public Publisher? Publisher { get; set; }
-        public ICollection<BookCategory>? BookCategories { get; set; }
+       
     }
 }
